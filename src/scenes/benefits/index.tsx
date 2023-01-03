@@ -1,5 +1,4 @@
 import ActionButton from "@/shared/ActionButton";
-import HText from "@/shared/HText";
 import { BenefitType, SelectedPage } from "@/shared/types";
 import {
   HomeModernIcon,
@@ -9,6 +8,7 @@ import {
 import { motion } from "framer-motion";
 import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
 import Benefit from "./Benefit";
+import Htext from "@/shared/Htext";
 
 const benefits: Array<BenefitType> = [
   {
@@ -60,7 +60,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <HText>MORE THAN JUST GYM.</HText>
+          <Htext>MORE THAN JUST GYM.</Htext>
           <p className="my-5 text-sm">
             We provide world class fitness equipment, trainers and classes to
             get you to your ultimate fitness goals with ease. We provide true
@@ -111,10 +111,10 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     visible: { opacity: 1, x: 0 },
                   }}
                 >
-                  <HText>
+                  <Htext>
                     MILLIONS OF HAPPY MEMBERS GETTING{" "}
                     <span className="text-primary-500">FIT</span>
-                  </HText>
+                  </Htext>
                 </motion.div>
               </div>
             </div>
